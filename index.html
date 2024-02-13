@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define a escala inicial e a largura do viewport para dispositivos móveis -->
+
+    <!-- Links para fontes externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Pré-conexão para otimização de carregamento -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Pré-conexão para otimização de carregamento -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,400;1,500&display=swap"
+        rel="stylesheet"> <!-- Importa a fonte Roboto do Google Fonts -->
+
+    <!-- Link para arquivo de estilos -->
+    <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo de estilos CSS local -->
+
+    <!-- Título da página -->
+    <title>CasaDaMoeda</title>
+</head>
+
+<body>
+    <!-- Divisão para o banner -->
+    <div class="banner">
+        <!-- Vídeo de fundo -->
+        <video autoplay muted loop>
+            <source src="./assents/moedafundo.mp4" type="video/mp4"> <!-- Fonte do vídeo -->
+        </video>
+    </div>
+
+    <!-- Divisão para o conteúdo principal -->
+    <div id="content">
+        <!-- Logo da moeda -->
+        <img class="logo" src="./assents/logo.gif" alt="logo-moeda"> <!-- Imagem representando o logotipo da moeda -->
+
+        <!-- Elemento principal da página -->
+        <main>
+            <!-- Seleção da moeda de origem -->
+            <label>
+                converter<b> de</b> <!-- Texto explicativo -->
+                <select class="currency-select-base">
+                    <option value="real-brl">R$ Real Brasil</option><!-- Opção de moeda base -->
+                </select>
+            </label>
+
+            <!-- Seleção da moeda de destino -->
+            converter<b> para</b> <!-- Texto explicativo -->
+            <label>
+                <select class="currency-select">
+                    <option value="dolar-usd"> US$ Dólar americano</option> <!-- Opção de moeda -->
+                    <option value="euro-eur"> € Euro</option> 
+                    <option value="libra-gbp"> £ Libra</option> 
+                    <option value="iene-jpy"> ¥ Iene Japonês</option>
+                    <option value="dolar-cad">C$ Dólar Canadense</option>
+                    <option value="franco-chf">Fr Franco Suíço</option>
+                    <option value="dolar-aud">A$ Dólar Australiano </option>
+                    <option value="iuan-cny">¥ Yuan Chinês </option>
+                    <option value="dolar-sgd">S$ Dólar de Singapura </option>
+                    <option value="dolar-hkd"> HK$ Dólar de Hong Kong</option>
+                    <option value="bitcoin">₿ BitCoin</option>
+
+                </select>
+            </label>
+
+            <!-- Campo para inserir o valor a ser convertido -->
+            <label>
+                Valor <!-- Texto explicativo -->
+                <input class="input-currency" placeholder="R$10.000,00"> <!-- Campo de entrada -->
+            </label>
+
+            <!-- Botão para iniciar a conversão -->
+            <button class="convert-button">Converter</button>
+
+            <!-- Seção para exibir informações sobre as moedas -->
+            <section>
+                <!-- Informações sobre a moeda de origem -->
+                <div class="currency-box">
+                    <img class="" src="./assents/real.png" alt="logo-moeda-real"> <!-- Imagem da moeda -->
+                    <p class="currency">Real</p> <!-- Nome da moeda -->
+                    <p class="currency-value-to-convert">R$ 0,0</p> <!-- Valor da moeda -->
+                </div>
+                <img class="arrow-img" src="./assents/arrow.png" alt="seta-baixo"> <!-- Imagem de seta -->
+                <!-- Informações sobre a moeda de destino -->
+                <div class="currency-box">
+                    <img class="currency-img" src="./assents/dolar.png" alt="logo-moeda-dolar"> <!-- Imagem da moeda -->
+                    <p class="currency" id="currency-name">Dólar americano</p> <!-- Nome da moeda -->
+                    <p class="currency-value">US$ 0,0</p> <!-- Valor da moeda -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script> <!-- Importa o arquivo de script JavaScript -->
+</body>
+
+</html>

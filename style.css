@@ -1,0 +1,131 @@
+/*font-family: 'Roboto', sans-serif;*/
+
+/* Define estilos básicos para o corpo da página */
+body {
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    height: 100px; /* Define a altura do corpo da página */
+    box-sizing: border-box; /* Garante que a altura total inclua a altura do conteúdo e as bordas */
+    font-family: 'Roboto', sans-serif; /* Define a família de fontes padrão */
+    outline: none; /* Remove as bordas de foco padrão */
+}
+
+/* Estilos para o banner */
+.banner {
+    width: 100%; /* Ocupa toda a largura disponível */
+    height: 100%; /* Ocupa toda a altura disponível */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as dimensões do banner */
+    display: flex; /* Usa flexbox para posicionar o conteúdo */
+    justify-content: center; /* Alinha o conteúdo horizontalmente ao centro */
+    align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+}
+
+/* Estilos para vídeos dentro do banner */
+.banner video {
+    position: fixed; /* Fixa o vídeo na posição definida */
+    top: 0; /* Alinha o vídeo ao topo */
+    left: 0; /* Alinha o vídeo à esquerda */
+    object-fit: cover; /* Redimensiona o vídeo para cobrir o contêiner */
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    z-index: -1; /* Coloca o vídeo atrás de outros elementos */
+}
+
+/* Estilos para a logo */
+.logo {
+    width: 100px; /* Define a largura da logo */
+    display: block; /* Transforma a logo em um elemento de bloco */
+    margin: 20px auto; /* Define margens superior e inferior automáticas e margens laterais automáticas */
+}
+
+/* Estilos para a seção principal */
+main {
+    width: 375px; /* Define a largura da seção principal */
+    background: #f7f7f7; /* Define a cor de fundo */
+    border-radius: 20px; /* Arredonda os cantos */
+    margin: 0 auto 40px; /* Define margens superior e inferior automáticas e margens laterais automáticas */
+    padding: 44px 24px 23px; /* Define o preenchimento interno */
+    opacity: 0.7; /* Define a opacidade */
+}
+
+/* Estilos para rótulos */
+label {
+    color: #777777; /* Define a cor do texto */
+    font-weight: 400; /* Define o peso da fonte */
+    font-size: 14px; /* Define o tamanho da fonte */
+}
+
+/* Estilos para campos de seleção e entrada */
+select, input {
+    background: #ffffff; /* Define a cor de fundo */
+    border: 1px solid #bbbbbb; /* Define a borda */
+    border-radius: 4px; /* Arredonda os cantos */
+    height: 48px; /* Define a altura */
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin-bottom: 24px; /* Define a margem inferior */
+    appearance: none; /* Remove os estilos padrão do sistema */
+    padding-left: 18px; /* Define o preenchimento à esquerda */
+    font-weight: 700; /* Define o peso da fonte */
+    font-size: 16px; /* Define o tamanho da fonte */
+    color: #555555; /* Define a cor do texto */
+    cursor: pointer; /* Muda o cursor ao passar sobre o elemento */
+}
+
+/* Estilos para botões */
+button {
+    background: #772fd3; /* Define a cor de fundo */
+    border-radius: 5px; /* Arredonda os cantos */
+    width: 100%; /* Ocupa toda a largura disponível */
+    border: none; /* Remove a borda */
+    height: 48px; /* Define a altura */
+    color: #ffffff; /* Define a cor do texto */
+    font-weight: 700; /* Define o peso da fonte */
+    font-size: 18px; /* Define o tamanho da fonte */
+    cursor: pointer; /* Muda o cursor ao passar sobre o elemento */
+}
+
+/* Estilos para o hover dos botões */
+button:hover {
+    opacity: 0.8; /* Define a opacidade ao passar o mouse */
+}
+
+/* Estilos para o clique nos botões */
+button:active {
+    opacity: 0.6; /* Define a opacidade ao clicar */
+}
+
+/* Estilos para seções */
+section {
+    border: 1px solid #772fd3; /* Define a borda */
+    border-radius: 20px; /* Arredonda os cantos */
+    margin-top: 36px; /* Define a margem superior */
+    padding: 12px; /* Define o preenchimento interno */
+    display: flex; /* Usa flexbox para posicionar o conteúdo */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+}
+
+/* Estilos para imagem de seta */
+.arrow-img {
+    margin: 15px 0; /* Define a margem superior e inferior */
+}
+
+/* Estilos para caixa de moeda */
+.currency-box {
+    display: flex; /* Usa flexbox para posicionar o conteúdo */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    gap: 4px; /* Define o espaçamento entre os itens */
+}
+
+/* Estilos para rótulo de moeda */
+.currency {
+    color: #777777; /* Define a cor do texto */
+    font-size: 14px; /* Define o tamanho da fonte */
+}
+
+/* Estilos para valor de moeda */
+.currency-value, .currency-value-to-convert {
+    color: #777777; /* Define a cor do texto */
+    font-weight: 700; /* Define o peso da fonte */
+    font-size: 20px; /* Define o tamanho da fonte */
+}
